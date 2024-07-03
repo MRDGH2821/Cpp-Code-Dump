@@ -1,0 +1,18 @@
+{
+  "blame": true,
+  "gitignore": true,
+  "ignore": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/.rbenv/**",
+    "**/.venv/**",
+    "**/*cache*/**",
+    "**/.github/**",
+    "**/.idea/**",
+    "**/report/**",
+    "**/*.svg"
+  ],
+  "ignorePattern": ["void\\sint_scan.*\\s*char.*\\s*fgets.*\\s*\\*number.*"],
+  "reporters": ["html", "markdown"],
+  "threshold": 0
+}

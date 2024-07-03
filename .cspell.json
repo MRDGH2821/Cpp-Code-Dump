@@ -1,0 +1,32 @@
+{
+  "allowCompoundWords": true,
+  "ignorePaths": [
+    "**/.devcontainer/**",
+    "**/.git/**",
+    "**/.github/**",
+    "**/.gitignore",
+    "**/.pnpm-lock.json",
+    "**/.vscode/**",
+    "**/megalinter/**",
+    "**/node_modules/**",
+    "**/report/**",
+    "**/vscode-extension/**",
+    "package-lock.json"
+  ],
+  "language": "en",
+  "noConfigSearch": true,
+  "useGitignore": true,
+  "version": "0.2",
+  "words": [
+    "Astyle",
+    "CPACK",
+    "MRDGH",
+    "astyle",
+    "fgets",
+    "fmemopen",
+    "megalinter",
+    "oxsecurity",
+    "strcmpi",
+    "venv"
+  ]
+}

@@ -1,0 +1,4 @@
+ls:
+  .cpp: snake_case
+ignore:
+  - build

@@ -1,0 +1,47 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "cs128.cs128-clang-tidy",
+        "cschlosser.doxdocgen",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "evondev.indent-rainbow-palettes",
+        "formulahendry.code-runner",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "michaelcurrin.auto-commit-msg",
+        "mine.cpplint",
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools",
+        "oderwat.indent-rainbow",
+        "redhat.vscode-yaml",
+        "spmeesseman.vscode-taskexplorer",
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens"
+      ],
+      "settings": {
+        "editor.fontFamily": "MesloLGM Nerd Font",
+        "terminal.integrated.fontFamily": "MesloLGM Nerd Font"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/apt-packages": {
+      "packages": "build-essential, clangd, clang-format, gdb, clang-tidy"
+    },
+    "ghcr.io/devcontainers-contrib/features/npm-package": {
+      "package": "mega-linter-runner"
+    },
+    "ghcr.io/devcontainers-contrib/features/pipx-package": {
+      "package": "cpplint"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker": {}
+  },
+  "image": "mcr.microsoft.com/devcontainers/base",
+  "name": "C Code dump dev container",
+  "onCreateCommand": {
+    "Install Astyle": "pipx install astyle",
+    "Install ls-lint": "npm install -g @ls-lint/ls-lint"
+  },
+  "postCreateCommand": "./.devcontainer/oh-my-posh-installer.sh"
+}
