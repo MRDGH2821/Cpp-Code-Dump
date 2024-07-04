@@ -1,5 +1,5 @@
 {
-  "[c]": {
+  "[cpp]": {
     "editor.defaultFormatter": "seaube.clangformat"
   },
   "[json]": {
