@@ -12,7 +12,8 @@
     "**/report/**",
     "**/*.svg"
   ],
-  "ignorePattern": ["void\\sint_scan.*\\s*char.*\\s*fgets.*\\s*\\*number.*"],
+  "ignorePattern": [],
+  "output": "./report",
   "reporters": ["html", "markdown"],
   "threshold": 0
 }
