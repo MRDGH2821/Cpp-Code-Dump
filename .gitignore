@@ -32,3 +32,4 @@
 *.app
 
 megalinter-reports
+reports
